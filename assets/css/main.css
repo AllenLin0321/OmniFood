@@ -15,17 +15,43 @@ html {
   max-width: 1140px;
   margin: 0 auto; }
 
+.btn:link, header .hero-text-box .btn-full:link, header .hero-text-box .btn-ghost:link, .btn:visited, header .hero-text-box .btn-full:visited, header .hero-text-box .btn-ghost:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #fff;
+  transition: background-color .2s, border 0.2s, color 0.2s; }
+
 header {
-  background-image: url("/assets/img/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/img/hero.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh; }
-
-.hero-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  .hero-text-box h1 {
-    margin: 0; }
+  header .hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    header .hero-text-box h1 {
+      margin: 0;
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: 240%;
+      font-weight: 300;
+      transform: uppercase;
+      word-spacing: 3px; }
+    header .hero-text-box .btn-full:link, header .hero-text-box .btn-full:visited {
+      background-color: #e67e22;
+      border: 1px solid #e67e22;
+      margin-right: 15px; }
+    header .hero-text-box .btn-full:hover, header .hero-text-box .btn-full:active {
+      background-color: #cf6d17; }
+    header .hero-text-box .btn-ghost:link, header .hero-text-box .btn-ghost:visited {
+      border: 1px solid #e67e22;
+      color: #e67e22; }
+    header .hero-text-box .btn-ghost:hover, header .hero-text-box .btn-ghost:active {
+      background-color: #cf6d17;
+      color: white; }
