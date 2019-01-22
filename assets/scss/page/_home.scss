@@ -1,0 +1,114 @@
+
+// Feature
+.section-feature{
+    
+    & .row>.long-copy{
+        line-height: 145%;
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 20px;
+    }
+
+    & .row>.feature-box{
+        &>h3{
+            @extend .header-font;
+            font-size: 110%;
+            margin-bottom: 15px;
+        }
+        &>p{
+            font-size: 90%;
+            line-height: 145%;
+        }
+
+        & i{
+            color: $color-btn;
+            font-size: 250%;
+            display: block;
+            margin: 20px auto;
+        }
+    }
+}
+
+// Favorite meals
+.meal-showcase{
+    list-style: none;
+    width: 100%;
+    & li{
+
+        display: block;
+        float: left;
+        width: 25%;
+
+        & .meal-photo{
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            & img{
+                width:100%;
+                height: auto;
+                transform: scale(1.15);
+                transition: transform 0.5s, opacity .5s;
+                opacity: 0.7;
+                &:hover{
+                    opacity: 1;
+                    transform: scale(1.03);
+                }
+            }
+
+        }
+    }   
+}
+
+// How it works
+
+.section-stops{
+    background-color:#f4f4f4 ;
+}
+
+.steps-box{
+    margin-top: 20px;
+    &:first-child{
+        text-align: right;
+        padding-right: 3%;
+        margin-top: 30px;
+        
+    }
+    &:last-child{
+        
+        margin-top: 70px;
+    }
+
+    & .app-screen{
+        width: 40%;
+    }
+
+    & .works-step{
+        margin-bottom: 50px;
+
+        & div{
+            color:$color-btn;
+            border: 2px solid $color-btn;
+            display: inline-block;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            padding: 5px;
+            float: left;
+            font-size: 150%;
+            margin:0 25px;
+        }
+
+        &:last-of-type{
+            margin-bottom: 100px;
+        }
+    }
+
+    & .btn-app img{
+        height: 50px;
+        width: auto;
+        margin-left: 25px;
+        margin-right: 10px;
+    }
+}

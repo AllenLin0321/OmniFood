@@ -1,45 +1,5 @@
-$color-btn:#e67e22;
-$color-btn-darker:#cf6d17;
 
-// -----------------------------------
-// Basic Setup
-// -----------------------------------
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html{
-    background-color: #fff;
-    color: #555;
-    font-family: 'Lato','Arial',sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
-}
-
-.row{
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-.btn:link,.btn:visited{
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;    
-    text-decoration: none;
-    border-radius: 200px;
-    color: #fff;
-    transition: background-color .2s, border 0.2s, color 0.2s;
-}
-
-// -----------------------------------
-// Header
-// -----------------------------------
-
-header{
+.header{
     background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("/assets/img/hero.jpg");
     background-size:cover;
     background-position: center;
@@ -53,12 +13,11 @@ header{
         transform: translate(-50%,-50%);
     
         & h1{
+            @extend .header-font;
             margin: 0;
             margin-bottom: 20px;
             color: #fff;
             font-size: 240%;
-            font-weight: 300;
-            transform: uppercase;
             word-spacing:3px;
         }
 
@@ -84,13 +43,15 @@ header{
             color: white;
         }
     }
-}
 
-.logo{
-    height: 100px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
+    &-logo{
+        height: 100px;
+        width: auto;
+        float: left;
+        margin-top: 20px;
+    }
+    
+  
 }
 
 .main-nav{
@@ -110,11 +71,8 @@ header{
             transition:  border-bottom .2s;   
         }
 
-        & a:hover, a:active{
-            
+        & a:hover, a:active{            
             border-bottom: 2px solid $color-btn;
         }
     }
 }
-
-
