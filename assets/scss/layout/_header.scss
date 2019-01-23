@@ -4,7 +4,7 @@
     background-size:cover;
     background-position: center;
     height: 100vh;
-    
+    background-attachment: fixed;
     & .hero-text-box{
         position: absolute;
         width: 1140px;
@@ -21,27 +21,6 @@
             word-spacing:3px;
         }
 
-        & .btn-full:link, .btn-full:visited{
-            @extend .btn;
-            background-color: $color-btn;
-            border: 1px solid $color-btn;
-            margin-right: 15px;
-        }
-
-        & .btn-full:hover, .btn-full:active{
-            background-color: $color-btn-darker;
-        }
-
-        & .btn-ghost:link, .btn-ghost:visited{
-            @extend .btn;
-            border: 1px solid $color-btn;
-            color:$color-btn;
-        }
-
-        & .btn-ghost:hover, .btn-ghost:active{
-            background-color: $color-btn-darker;
-            color: white;
-        }
     }
 
     &-logo{

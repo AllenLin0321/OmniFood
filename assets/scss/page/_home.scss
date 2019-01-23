@@ -2,20 +2,20 @@
 // Feature
 .section-feature{
     
-    & .row>.long-copy{
+    & .long-copy{
         line-height: 145%;
         width: 70%;
         margin-left: 15%;
         margin-bottom: 20px;
     }
 
-    & .row>.feature-box{
-        &>h3{
+    & .feature-box{
+        & h3{
             @extend .header-font;
             font-size: 110%;
             margin-bottom: 15px;
         }
-        &>p{
+        & p{
             font-size: 90%;
             line-height: 145%;
         }
@@ -61,21 +61,19 @@
 }
 
 // How it works
-
-.section-stops{
-    background-color:#f4f4f4 ;
+.section-steps{
+    background-color:#F4F4F4 ; 
 }
 
 .steps-box{
-    margin-top: 20px;
+
     &:first-child{
         text-align: right;
         padding-right: 3%;
         margin-top: 30px;
         
     }
-    &:last-child{
-        
+    &:last-child{        
         margin-top: 70px;
     }
 
@@ -89,7 +87,6 @@
         & div{
             color:$color-btn;
             border: 2px solid $color-btn;
-            display: inline-block;
             border-radius: 50%;
             height: 50px;
             width: 50px;
@@ -105,10 +102,141 @@
         }
     }
 
-    & .btn-app img{
-        height: 50px;
-        width: auto;
-        margin-left: 25px;
-        margin-right: 10px;
+    & .btn-app{
+        border: 0;
+        & img{
+            height: 50px;
+            width: auto;
+            margin-left: 25px;
+        }
     }
+
+}
+
+// Cities
+.section-cities{
+    
+    & .cities-img{
+        width: 100%;
+        padding-right: 20px;
+        margin-bottom: 15px;
+    }
+
+    & ul{
+        list-style: none;
+        font-size: 90%;
+
+        & li{
+            margin-bottom: 10px;
+            font-size: 110%;
+            & i{
+                display: inline-block;
+                color:$color-btn;
+                margin-right: 15px;
+                line-height: 120%;
+                vertical-align: middle;
+                width: 15px;
+            }
+
+        }
+    }
+
+}
+
+// Testimonials
+.section-testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("/assets/img/back-customers.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-attachment: fixed;
+    
+    & blockquote{
+        padding: 2%;
+        font-style: italic;
+        line-height: 145%;
+        position: relative;
+        margin-top: 40px;
+        &:before{
+            content: "\201C";
+            font-size: 500%;
+            display: block;
+            position: absolute;
+            top: -5px;
+            left: -3px;
+        }
+
+        & cite{
+            font-size: 90%;
+            margin-top: 25px;
+            display: block;     
+            
+            & img{
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 10px;
+                // place the element in the middle of the parent element
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+// Price Table
+.section-price{
+    background-color: #F4F4F4;
+
+    & .plan-box{
+        background-color: white;
+        border-radius: 5px;
+        width: 90%;
+        margin-left: 5%;
+        box-shadow:0 2px 2px #fff ;
+        & div{
+            padding: 15px;
+            border-bottom: 1px solid #e8e8e8;
+
+            &:first-child{
+                background-color: #FCFCFC;
+            }
+
+            &:last-child{
+                text-align: center;
+                border: 0;
+            }
+
+            & .plan-price{
+                font-size: 300%;
+                margin-bottom: 10px;
+                font-weight: 100;
+                color: $color-btn;
+
+                & span{
+                    font-size: 30%;
+                    font-weight: 300;
+                }
+
+            }
+
+            & .plan-price-meal{
+                font-size: 80%;
+            }
+        }
+
+        & ul{
+            list-style: none;
+            & li{
+                padding: 5px 0;
+                & i{
+                    @extend %small-icon;
+                }
+
+            }
+        }
+    }
+}
+
+// Contact Us
+.contact-form{
+    // width: 60%;
 }
