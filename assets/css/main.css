@@ -5,13 +5,14 @@
   *:focus {
     outline: none; }
 
-html {
+html, body {
   background-color: #fff;
   color: #555;
   font-family: 'Lato','Arial',sans-serif;
   font-weight: 300;
   font-size: 20px;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden; }
 
 .clearfix {
   zoom: 1; }
@@ -293,7 +294,7 @@ a:active {
       .section-price .plan-box div .plan-price {
         font-size: 300%;
         margin-bottom: 10px;
-        font-weight: 100;
+        font-weight: 400;
         color: #e67e22; }
         .section-price .plan-box div .plan-price span {
           font-size: 30%;
