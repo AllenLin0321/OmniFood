@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+  *:focus {
+    outline: none; }
 
 html {
   background-color: #fff;
@@ -78,7 +80,7 @@ a:active {
   max-width: 1140px;
   margin: 0 auto; }
 
-.btn:link, .btn-full:link, .btn-ghost:link, .btn:visited, .btn-full:visited, .btn-ghost:visited {
+.btn:link, .btn-full:link, .btn-ghost:link, .btn:visited, .btn-full:visited, .btn-ghost:visited, input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -92,7 +94,7 @@ a:active {
   border: 1px solid #e67e22;
   margin-right: 15px; }
 
-.btn-full:hover, .btn-full:active {
+.btn-full:hover, .btn-full:active, input[type=submit] {
   background-color: #cf6d17; }
 
 .btn-ghost:link, .btn-ghost:visited {
@@ -302,3 +304,56 @@ a:active {
       list-style: none; }
       .section-price .plan-box ul li {
         padding: 5px 0; }
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto; }
+  .contact-form input[type=text], .contact-form input[type=email], .contact-form select, .contact-form textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc; }
+  .contact-form textarea {
+    height: 100px; }
+  .contact-form input[type=checkbox] {
+    margin: 10px 5px 10px 0; }
+
+.footer {
+  background-color: #333333;
+  padding: 50px; }
+  .footer .footer-nav {
+    list-style: none;
+    float: left;
+    font-size: 80%; }
+  .footer .social-links {
+    list-style: none;
+    float: right; }
+    .footer .social-links li a:link, .footer .social-links li a:visited {
+      font-size: 120%; }
+    .footer .social-links li .fab {
+      transition: color .5s; }
+    .footer .social-links li .fa-facebook-f:hover {
+      color: #3b5998; }
+    .footer .social-links li .fa-twitter:hover {
+      color: #1da1f2; }
+    .footer .social-links li .fa-google-plus-g:hover {
+      color: #db4437; }
+    .footer .social-links li .fa-instagram:hover {
+      color: #c32aa3; }
+  .footer li {
+    display: inline-block;
+    margin-right: 20px; }
+    .footer li:last-child {
+      margin: 0; }
+    .footer li a:link, .footer li a:visited {
+      text-decoration: none;
+      border: 0;
+      color: #888;
+      transition: color .2s; }
+    .footer li a:hover, .footer li a:active {
+      color: #ddd; }
+  .footer p {
+    color: #888;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 30px; }

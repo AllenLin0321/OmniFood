@@ -1,4 +1,4 @@
-.btn:link,.btn:visited{
+.btn:link,.btn:visited,input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;    
@@ -14,10 +14,10 @@
     border: 1px solid $color-btn;
     margin-right: 15px;
 }
-
-.btn-full:hover, .btn-full:active{
+.btn-full:hover, .btn-full:active,input[type=submit]{
     background-color: $color-btn-darker;
 }
+
 
 .btn-ghost:link, .btn-ghost:visited{
     @extend .btn;

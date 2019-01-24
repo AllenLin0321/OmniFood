@@ -238,5 +238,88 @@
 
 // Contact Us
 .contact-form{
-    // width: 60%;
+    width: 60%;
+    margin: 0 auto;
+
+    & input[type=text],input[type=email],select,textarea{
+        width: 100%;
+        padding: 7px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+    & textarea{
+        height: 100px;
+    }
+
+    & input[type=checkbox]{
+        margin: 10px 5px 10px 0;
+    }
+
+}
+
+// Footer
+.footer{
+    background-color: #333333;
+    padding: 50px;
+
+    & .footer-nav{
+        list-style: none;
+        float: left;
+        font-size: 80%;
+    }
+    
+    & .social-links{
+        list-style: none;
+        float: right;
+
+        & li a:link,li a:visited{
+            font-size: 120%;            
+        }
+
+        & li .fab{
+            transition: color .5s;
+        }
+
+        & li .fa-facebook-f:hover{
+            color: #3b5998;
+        }
+        & li .fa-twitter:hover{
+            color: #1da1f2;
+        }
+        & li .fa-google-plus-g:hover{
+            color: #db4437;
+        }
+        & li .fa-instagram:hover{
+            color: #c32aa3;
+        }
+    }
+
+    & li{
+        display: inline-block;
+        margin-right: 20px;
+
+        &:last-child{
+            margin: 0;
+        }
+
+        & a:link, a:visited{
+            text-decoration: none;
+            border: 0;
+            color: #888;
+            transition: color .2s;
+        }
+
+        & a:hover, a:active{
+            color: #ddd;
+        }
+
+    }
+
+    p{
+        color: #888;
+        text-align: center;
+        font-size: 80%;
+        margin-top: 30px ;
+    }
 }
