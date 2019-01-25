@@ -25,16 +25,18 @@
 
     }
 
-    &-logo{
+    &-logo, &-logo-black{
         height: 100px;
         width: auto;
         float: left;
         margin-top: 20px;
     }
-    
-  
+
+    &-logo-black{display: none;}
+
 }
 
+//  Main navi
 .main-nav{
     float:right;
     list-style: none;
@@ -57,4 +59,47 @@
             border-bottom: 2px solid $color-btn;
         }
     }
+}
+
+// Mobile navi
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor:pointer;
+    display: none;
+
+    & i{
+        font-size: 200%;
+        color: white;
+    }
+}
+
+// Sticky navi
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color: white, $alpha: .98);
+    box-shadow: 0 2px 2px #efefef; 
+    z-index: 9999;
+
+    & .main-nav li a:link, 
+      .main-nav li a:visited{
+        padding: 21px 0;
+        color: #555;
+
+    }
+
+    & .header-logo-black{
+        height: 50px;
+        width: auto;
+        float: left;
+        margin: 5px 0;
+        display: block;
+    }
+    & .header-logo{display: none;}
+
+    & .main-nav{ margin-top: 15px; }
+
 }

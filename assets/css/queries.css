@@ -52,6 +52,35 @@
 
     .main-nav{display: none;}
 
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    .main-nav{
+        float: left;
+        margin-top: 30px;
+    }
+
+    .main-nav li{
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        border: 0;
+        font-size: 100%;
+    }
+
+    .sticky .main-nav li a:link, 
+    .main-nav li a:visited{ padding: 10px 0; }
+
+    .sticky .main-nav{ margin-top: 6px; }
+
+    .sticky .mobile-nav-icon i{color:#555; }
+
+    .sticky .mobile-nav-icon {margin-top: 15px;}
+
     body .header .hero-text-box h1{font-size: 180%;}
 
     h2{font-size: 130%;}
